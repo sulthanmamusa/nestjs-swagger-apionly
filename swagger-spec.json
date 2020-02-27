@@ -1,0 +1,210 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Travelomatix Api",
+    "description": "The travelomatix API description",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [{ "name": "Travelomatix", "description": "" }],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "CreateCatDto": {
+        "type": "object",
+        "properties": { "userinp": { "type": "string" } },
+        "required": ["userinp"]
+      }
+    }
+  },
+  "paths": {
+    "/custom_product/b2c/index.php/flight/flight/service/AirportList": {
+      "post": {
+        "operationId": "AppController_AirportList",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CreateCatDto" }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/flight/flight/service/CabinClass": {
+      "get": {
+        "operationId": "AppController_CabinClass",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/flight/flight/service/AirlineList": {
+      "get": {
+        "operationId": "AppController_AirlineList",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/SearchModule": {
+      "get": {
+        "operationId": "AppController_SearchModule",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/TourStyle": {
+      "get": {
+        "operationId": "AppController_TourStyle",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/TopAirline": {
+      "get": {
+        "operationId": "AppController_TopAirline",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/WhyChooseUs": {
+      "get": {
+        "operationId": "AppController_WhyChooseUs",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/SocialLinks": {
+      "get": {
+        "operationId": "AppController_SocialLinks",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/CmsLinks": {
+      "get": {
+        "operationId": "AppController_CmsLinks",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/home/home/service/FooterAddress": {
+      "get": {
+        "operationId": "AppController_FooterAddress",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/hotel/hotel/service/HotelCityList": {
+      "get": {
+        "operationId": "AppController_HotelCityList",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    },
+    "/custom_product/b2c/index.php/bus/bus/service/BusCityList": {
+      "get": {
+        "operationId": "AppController_BusCityList",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "application/json",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } },
+        "depth": 1
+      }
+    }
+  }
+}

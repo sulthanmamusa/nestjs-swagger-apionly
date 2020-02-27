@@ -1,0 +1,11 @@
+{
+    "/travelapi/*": {
+        "target": "http://192.168.0.219",
+        "secure": false,
+        "pathRewrite": {
+            "^/travelapi": ""
+          },
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}
